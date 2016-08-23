@@ -5,77 +5,115 @@
         <title>Welcome to Sedona!</title>
     </head>
     <body>
-        <div class="header">
-            <ul>
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и Видео</a></li>
-                <li><img class="city-of-sedona" src="http://placehold.it/50x50">
-                <li><a href="#">Карта Штата</a></li>
-                <li><a href="#">Гостиницы</a></li>
-            </ul>
-        </div>
         <div class="container">
-            <div class="top">
+            <div class="header">
+                <ul>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Фото и Видео</a></li>
+                    <span class="current"><img class="city-of-sedona" src="http://placehold.it/50x50"></span>
+                    <li><a href="#">Карта Штата</a></li>
+                    <li><a href="#">Гостиницы</a></li>
+                </ul>
+            </div>
+            <div class="banner">
                 <img class="welcome-to" src="http://placehold.it/150x100">
-                <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
-                <p class="grand-canyon">"Because the Grand Canyon sucks!"</p>
+                <img class="sedona-image" src="http://placehold.it/150x100">
+                <img class="grand-canyon-quote" src="http://placehold.it/150x100">
             </div>
             <div class="description">
                 <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
-            <div class="fact">
+            <div class="media-block">
                 <h3>Настоящий городок</h3>
                 <span>- №1 -</span>
                 <p>Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
                 <img class="fact-img" src="http://placehold.it/150x300">
             </div>
-            <div class="fact">
-                <h3>ЖИЛЬЕ</h3>
-                <p>Рекомендуем пожить в настоящем <br>мотеле - все, как в кино!</p>
-            </div>
-            <div class="fact">
-                <h3>ЕДА</h3>
-                <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
-            </div>
-            <div class="fact">
-                <h3>СУВЕНИРЫ</h3>
-                <p>Не только китайского, но и местного производства!</p>
-            </div>
-            <div class="fact">
+            <ul class="feature">
+                <li class="feature">
+                    <h3>Жилье</h3>
+                    <p>Рекомендуем пожить в настоящем <br>мотеле - все, как в кино!</p>
+                </li>  
+                <li class="feature">
+                    <h3>Еда</h3>
+                    <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
+                </li>
+                <li class="feature">
+                    <h3>Сувениры</h3>
+                    <p>Не только китайского, но и местного производства!</p>
+                </li>
+            </ul>
+            <div class="media-block">
                 <h3>Там есть мост дьявола</h3>
                 <span>- №2 -</span>
                 <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
                 <img class="fact-img" src="http://placehold.it/150x300">
             </div>
-            <div class="fact">
-                <h3>Небольшая площадь</h3>
-                <span>- №3 -</span>
-                <p>Все достопримечательности находятся очень близко</p>
-            </div>
-            <div class="fact">
-                <h3>Красивая дорога</h3>
-                <span>- №4 -</span>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                <img class="fact-img" src="http://placehold.it/150x300">
-            </div>
-            <div class="fact">
-                <h3>Мало туристов</h3>
-                <span>- №5 -</span>
-                <p>Большинство едет в Гранд Каньон и толпится там</p>
-                <img class="fact-img" src="http://placehold.it/150x300">
-            </div>
-            <div>
-                <span>Заинтересовались?</span>
+            <ul class="reason">
+                <li class="reason">
+                    <h3>Небольшая площадь</h3>
+                    <span>- №3 -</span>
+                    <p>Все достопримечательности находятся очень близко</p>
+                </li>
+                <li class="reason">
+                    <h3>Красивая дорога</h3>
+                    <span>- №4 -</span>
+                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </li>
+                <li class="reason">
+                    <h3>Мало туристов</h3>
+                    <span>- №5 -</span>
+                    <p>Большинство едет в Гранд Каньон и толпится там</p>
+                </li>
+            </ul>
+            <div class="interested">
+                <span><b>Заинтересовались?</b></span>
                 <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <a class="modal-title" id="sedona-modal-toggle" href="hotel-search.html" title="search hotels in sedona">Поиск гостиницы в Седоне</a>
             </div>
             <div class="search">
-                <span>Поиск гостиницы в Седоне</span>
-                <span>Дата заезда</span>
-                <span>Дата выезда</span>
-                <span>Взрослые</span>
-                <span>Дети</span>
-                <span>Найти</span>
+                <!--<div class="modal modal-hotels-search js-modal-open" id="sedona-modal">-->
+                    <form class="hotel-search-form" action="/" method="POST" id="hotel-search-form">
+
+                        <label for="arrival-date">Дата заезда:</label>
+                        <div class="improved-input improved-input-date">
+                            <input id="arrival-date" type="text" name="arrival-date" value="24 апреля 2016">
+                            <button class="calendar-button" type="button"><i class="icon-calendar"></i></button>
+                        </div>
+                        <label for="departure-date">Дата выезда:</label>
+                        <div class="improved-input improved-input-date">
+                            <input id="departure-date" type="text" name="departure-date" value="4 июля 2016">
+                            <button class="calendar-button" type="button"><i class="icon-calendar"></i></button>
+                        </div>
+
+                        <div class="one-half">
+                            <label for="adults-count">Взрослые:</label>
+                            <div class="improved-input improved-input-number">
+                                <button class="decrease-number" type="button">
+                                    <i class="icon-minus"></i>
+                                </button>
+                                <input id="adults-count" type="text" name="adults-count" value="2">
+                                <button class="increase-number" type="button">
+                                    <i class="icon-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="one-half">
+                            <label class="children-label-fixed" for="children-count">Дети:</label>
+                            <div class="improved-input improved-input-number">
+                                <button class="decrease-number" type="button">
+                                    <i class="icon-minus"></i>
+                                </button>
+                                <input id="children-count" type="text" name="children-count" value="0">
+                                <button class="increase-number" type="button"><i class="icon-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-standard" type="submit">Найти</button>
+                    </form>
+                <!--</div>-->
             </div>
             <div class="footer">
                 <div class="footer-hashtag">
@@ -92,5 +130,6 @@
                 </div>
             </div>
         </div>
+        </div>  
     </body>
 </html>
