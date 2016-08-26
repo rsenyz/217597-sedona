@@ -14,52 +14,80 @@
                 <li><a href="#">Гостиницы</a></li>
             </ul>
         </div>
-        <div class="search">
+        <div class="filters">
             <form action="#" method="post">
-                <h2>ИНФРАСТРУКТУРА:</h2>
-                <label><input type="checkbox" name="feature1" checked>БАССЕЙН</label>
-                <label><input type="checkbox" name="feature2">ПАРКОВКА</label>
-                <label><input type="checkbox" name="feature3">WI-FI</label>
-                <h2>ТИП ЖИЛЬЯ:</h2>
-                <label><input type="checkbox" name="type1" checked> ГОСТИНИЦА</label>
-                <label><input type="checkbox" name="type2" checked> ОТЕЛЬ</label>
-                <label><input type="checkbox" name="type3" checked> АПАРТАМЕНТЫ</label>
+                <legend>Инфраструктура:</legend>
+                <fieldset>
+                    <label><input type="checkbox" name="feature1" checked>Бассейн</label>
+                    <label><input type="checkbox" name="feature2">Парковка</label>
+                    <label><input type="checkbox" name="feature3">Wi-Fi</label>
+                </fieldset>
+                <fieldset>Тип жилья:
+                    <label><input type="checkbox" name="type1" checked> Гостиница</label>
+                    <label><input type="checkbox" name="type2" checked> Отель</label>
+                    <label><input type="checkbox" name="type3" checked> Апартаменты</label>
+                </fieldset>
                 <div class="price"></div>
-                <input type="submit" value="ПОКАЗАТЬ">
+                <button type="button">Показать</button>
             </form>
         </div>
         <div class="sort">
-            <span>НАЙДЕНО:3</span>
+            <span>Найдено:3</span>
             <span>Сортировка:</span>
-            <a class="sort-by" href="#">ПО ЦЕНЕ</a>
-            <a class="sort-by" href="#">ПО ТИПУ</a>
-            <a class="sort-by" href="#">ПО РЕЙТИНГУ</a>
-        </div>
-        <div class="found">
             <ul>
-                <li><img class="hotel" src="http://placehold.it/50x50">
-                    <span>AMARA RESORT & SPA</span><br>Гостиница<span>от 3500 Р.</span>
-                    <a class="more" href="#">Подробнее</a>
-                    <a class="book" href="#">Забронировать</a>
-                    <img class="stars href="http://placehold.it/50x50">
-                    <span class="rating">Рейтинг: 8,5</span>
+                <li>
+                    <a class="sort-by" href="#">По цене</a>
                 </li>
-                <li><img class="hotel" src="http://placehold.it/50x50">
-                    <span>DESERT QUAIL INN</span><br>Мотель<span>от 2000 Р.</span>
-                    <a class="more" href="#">Подробнее</a>
-                    <a class="book" href="#">Забронировать</a>
-                    <img class="stars href="http://placehold.it/50x50">
-                    <span class="rating">Рейтинг: 8,9</span>
+                <li>
+                    <a class="sort-by" href="#">По типу</a>
                 </li>
-                <li><img class="hotel" src="http://placehold.it/50x50">
-                    <span>VILLAS AT POCO DIABLO</span><br>Апартаменты<span>от 4000 Р.</span>
-                    <a class="more" href="#">Подробнее</a>
-                    <a class="book" href="#">Забронировать</a>
-                    <img class="stars href="http://placehold.it/50x50">
-                    <span class="rating">Рейтинг: 9,2</span>
+                <li>
+                    <a class="sort-by" href="#">По рейтингу</a>
                 </li>
             </ul>
+            <div class="sort-direction-wrapper">
+                <span class="sort-direction-up"><a href="#"></a></span>
+                <span class="sort-direction-down"><a href="#"></a></span>
+            </div>
         </div>
+        <ul class="found-hotels">
+            <li class="found-hotels-item">
+                <div class="found-hotels-item-left">
+                    <img class="hotel" src="http://placehold.it/50x50">
+                    <span>Amara Resort &amp Spa</span><br>Гостиница<span>от 3500 Р.</span>
+                    <a class="more" href="#">Подробнее</a>
+                    <a class="book" href="#">Забронировать</a>
+                </div>
+                <div class="found-hotels-item-right">
+                    <div class="stars stars-4"></div>
+                    <span class="rating">Рейтинг: 8,5</span>
+                </div>
+            </li>
+            <li class="found-hotels-item">
+                <div class="found-hotels-item-left">
+                    <img class="hotel" src="http://placehold.it/50x50">
+                    <span>Desert Quail INN</span><br>Мотель<span>от 2000 Р.</span>
+                    <a class="more" href="#">Подробнее</a>
+                    <a class="book" href="#">Забронировать</a>
+                </div>
+                <div class=""found-hotels-item-right">
+                    <div class="stars stars-2"></div>
+                    <span class="rating">Рейтинг: 8,9</span>
+                </div>
+            </li>
+            <li class="found-hotels-item">
+                <div class="found-hotels-item-left">
+                    <img class="hotel" src="http://placehold.it/50x50">
+                    <span>Villas at Poco Diablo</span><br>Апартаменты<span>от 4000 Р.</span>
+                    <a class="more" href="#">Подробнее</a>
+                    <a class="book" href="#">Забронировать</a>
+                </div>
+                <div class="found-hotels-item-right">
+                    <div class="stars stars-3"></div>
+                    <span class="rating">Рейтинг: 9,2</span>
+                </div>
+            </li>
+        </ul>
         <div class="footer">
             <div class="footer-hashtag">
                 <span>#VISITSEDONA</span>
